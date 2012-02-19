@@ -2,12 +2,13 @@
 html
   head
     meta(charset="UTF-8")
-    title Express.js tryout || #{title}
+    title= title
     link(rel='stylesheet', type='text/css', href='/css/styles.css')
   body
     != partial('shared/usernav');
 
     header
-      h1 Blog
+      h1 
+        a(href='/') Blog
 
     != body

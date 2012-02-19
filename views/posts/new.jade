@@ -2,6 +2,7 @@
   h2 New post
 
   form(action='/posts', method='post')
+    input(type='hidden', name='post[id]', value=post.id)
     .title
       label(for='post_title') Title
       br

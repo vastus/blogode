@@ -1,1 +1,9 @@
+#posts
+  - each post in posts
+    .post(style='margin-bottom: 1em;')
+      .title
+        h2 
+          a(href='/posts/' + post.id)= post.doc.title
+      .content
+        p= post.doc.content
 
