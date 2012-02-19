@@ -1,8 +1,7 @@
 var express = require('express'),
         app = express.createServer(),
        nano = require('nano')('http://testos:secretos@vastus.iriscouch.com/'),
-         db = nano.use('mydb'),
-       Post = require(__dirname + '/models/post')
+         db = nano.use('mydb');
 
 // configuration
 app.configure(function() {
@@ -23,8 +22,11 @@ app.get('/', function(req, res) {
 
 // posts
 app.get('/posts/:id', function(req, res) {
-  db.get('1', function(err, data) {
-    if (err) throw err;
+  db.get(req.params.id, function(err, data) {
+    if (err) {
+      console.log("ERRORS: ", err);
+      res.render('shared/404.jade', { title: "404 Not found" });
+    }
     post = data
     res.render('posts/show.jade', { title: post.title, post: post });
   });
