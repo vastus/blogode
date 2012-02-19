@@ -1,4 +1,4 @@
-var nano = require('nano')('http://veto:lamourettes@vastus.iriscouch.com/');
+var nano = require('nano')('http://testos:secretos@vastus.iriscouch.com/');
 
 db = nano.use('mydb');
 
