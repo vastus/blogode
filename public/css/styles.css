@@ -1,0 +1,196 @@
+/* TODO: 
+ *
+ *   Display HTML5 elements as a block
+ *   
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+   
+body {
+  color: #333;
+  width: 800px;
+  line-height: 1;
+  margin: 50px auto;
+  font: normal 100% helvetica, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5em;
+}
+
+a {
+  color: #666;
+}
+
+a:hover {
+  color: #999;
+}
+
+ul {
+  font-size: 14px;
+  margin-left: 1em;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+form label {
+  font-size: 12px;
+  margin: 0 .1em .1em .1em;
+  display: inline-block;
+}
+
+form input[type=text],
+form input[type=email] {
+  padding: .5em .3em;
+}
+
+form textarea {
+  height: 8em;
+  padding: .3em;
+}
+
+form input,
+form textarea {
+  border: 1px solid;
+  margin-bottom: .5em;
+  border-color: #aaa #ccc #eee;
+  font-family: helvetica, arial, sans-serif;
+}
+
+form input[type=text],
+form input[type=email],
+form textarea {
+  width: 30em;
+  font-size: 14px;
+  line-height: 1.3;
+  background: #fff;
+}
+
+form input[type=text]:hover,
+form input[type=email]:hover,
+form textarea:hover {
+  border-color: #999 #bbb #ddd;
+}
+
+form input[type=text]:focus,
+form input[type=email]:focus,
+form textarea:focus {
+  background: #fff;
+  box-shadow: 0 0 2px #ccc;
+  border-color: #999 #bbb #ddd;
+}
+
+form input[type=submit] {
+  color: #666;
+  outline: none;
+  font-size: 12px;
+  padding: .5em .8em;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  background: -moz-linear-gradient(to bottom, #fafafa 30%, #ccc); /*/#fafafa;*/
+}
+
+form input[type=submit]:hover {
+  background: -moz-linear-gradient(to bottom, #fff 50%, #cacaca); /*/#fafafa;*/
+}
+
+form input[type=submit]:active {
+  background: -moz-linear-gradient(to bottom, #fff, #ddd); /*/#fafafa;*/
+}
+
+/* Browser specific */
+
+/* FF */
+button::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner {
+  border: 0;
+}
+
+/* lists */
+
+nav ul.horizontal {
+  margin: 0 0 0 -0.7em;
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+nav ul.horizontal li {
+  display: inline;
+  padding: .3em .1em;
+  position: relative;
+}
+
+nav ul.horizontal li:first-child {
+  padding-left: 0;
+}
+
+nav ul.horizontal li a {
+  padding: .3em .8em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav ul.horizontal li a:hover {
+  color: #000;
+}
+
+nav ul.horizontal ul.nested.vertical {
+  top: 0;
+  left: -1em;
+  display: none;
+  min-width: 10em;
+  padding-top: 2em;
+  position: absolute;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow: -2px 2px 3px #eee;
+}
+
+nav ul.horizontal li:hover ul.nested.vertical {
+  display: block;
+}
+
+nav ul.horizontal ul.nested.vertical li {
+  display: block;
+  padding-top: 0;
+  background: #fff;
+}
+
+nav ul.horizontal ul.nested.vertical li a {
+  display: block;
+  padding: .3em 1.3em;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+nav ul.horizontal ul.nested.vertical li a:hover {
+  color: #444;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  background: -moz-linear-gradient(to top, #f5f5f5, #fbfbfb);
+}
+
+nav ul.horizontal ul.nested.vertical {
+  /* display: none; */
+}
+
+nav ul.horizontal {
+}
+
+nav ul.horizontal {
+}
+
+article p {
+}
+
+

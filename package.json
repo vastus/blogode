@@ -1,0 +1,11 @@
+{
+    "name": "vastus-nanoblog"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.x"
+    , "stylus": ">= 0.0.1"
+    , "jade": ">= 0.0.1"
+    , "nano": "1.3.x"
+  }
+}

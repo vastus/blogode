@@ -1,0 +1,14 @@
+#post
+  h2 New post
+
+  form(action='/posts', method='post')
+    .title
+      label(for='post_title') Title
+      br
+      input(type='text', name='post[title]', id='post_title')
+    .content
+      label(for='post_content') Content
+      br
+      textarea(name='post[content]', id='post_content')
+    .submit
+      input(type='submit', value='Create')
